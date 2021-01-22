@@ -1,0 +1,53 @@
+$pathToFonts: "./../assets/fonts/";
+@font-face {
+  @include conFont(
+    "Montserrat",
+    $pathToFonts + "montserrat/montserrat-regular.ttf",
+    $pathToFonts + "montserrat/montserrat-regular.woff",
+    $pathToFonts + "montserrat/montserrat-regular.svg",
+    "normal",
+    "normal",
+    false
+  );
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url($pathToFonts + "montserrat/montserrat-bold.ttf") format("truetype");
+  src: url($pathToFonts + "montserrat/montserrat-bold.woff") format("woff"),
+    url($pathToFonts + "montserrat/montserrat-bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url($pathToFonts + "quicksand/quicksand-bold.ttf") format("truetype");
+  src: url($pathToFonts + "quicksand/quicksand-bold.woff") format("woff"),
+    url($pathToFonts + "quicksand/quicksand-bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  @include conFont(
+    "Quicksand",
+    $pathToFonts + "quicksand/quicksand-regular.ttf",
+    $pathToFonts + "quicksand/quicksand-regular.woff",
+    $pathToFonts + "quicksand/quicksand-regular.svg",
+    "normal",
+    "normal",
+    false
+  );
+}
+@font-face {
+  @include conFont(
+    "Open Sans",
+    $pathToFonts + "opensans/opensans-bold.ttf",
+    $pathToFonts + "opensans/opensans-bold.woff",
+    false,
+    "bold",
+    "normal",
+    $pathToFonts + "opensans/opensans-bold.woff2"
+  );
+}

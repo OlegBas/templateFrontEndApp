@@ -1,0 +1,41 @@
+/*Sizes*/
+$baseSizeText: 14px;
+$textXs: 10px;
+$textSm: 12px;
+$textMd: 19px;
+$textLg: 24px;
+
+/* Fonts */
+$fontPrimary: "Montserrat", Arial, serif;
+$fontSecondary: "Quicksand", "Montserrat", Arial, serif;
+
+/*Colors */
+$textColor: #1f2041;
+$colorPrimary: #bc9cff;
+$colorPrimaryLight: #efefff;
+$colorSecondary: #6fcf97;
+$gradientPrimary: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$gradientSecondary: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+$gradientPerfect: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+$gradientBad: linear-gradient(180deg, #909090 0%, #3d4975 100%);
+$gradientPrimaryTransparent: linear-gradient(
+  180deg,
+  rgba(#bc9cff, 0.5) 0%,
+  rgba(#8ba4f9, 0.5) 100%
+);
+$gradientPrimaryLight: linear-gradient(
+  180deg,
+  rgba(#bc9cff, 0.25) 0%,
+  rgba(#8ba4f9, 0.25) 100%
+);
+$gradientSecondaryTransparent: linear-gradient(
+  180deg,
+  rgba(#6fcf97, 0.5) 0%,
+  rgba(#66d2ea, 0.5) 100%
+);
+$textColor-75: rgba($textColor, 0.75);
+$textColor-50: rgba($textColor, 0.5);
+$textColor-25: rgba($textColor, 0.25);
+$textColor-5: rgba($textColor, 0.5);
+$textColor-10: rgba($textColor, 0.1);
+$textColor-2: rgba($textColor, 0.02);

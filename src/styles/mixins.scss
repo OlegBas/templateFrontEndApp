@@ -1,0 +1,39 @@
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin conFont(
+  $fontName,
+  $srcTtf,
+  $srcWoff,
+  $srcSvg,
+  $fontStyle,
+  $fontWeight,
+  $srcWoff2
+) {
+  font-family: $fontName;
+  @if $srcTtf {
+    src: url($srcTtf) format("truetype");
+  }
+  @if $srcWoff {
+    src: url($srcWoff) format("woff");
+  }
+  @if $srcSvg {
+    src: url($srcSvg) format("svg");
+  }
+  @if $srcWoff2 {
+    src: url($srcWoff2) format("woff2");
+  }
+
+  font-weight: $fontStyle;
+  font-style: $fontWeight;
+}
+
+@mixin flex($alignItems, $justifyContent: null, $flexDirection: null) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+}
